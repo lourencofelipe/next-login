@@ -14,8 +14,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-       
+      <main className="flex space-x-4">
+        <div className="flex-1">
+          <p>asas</p>
+        </div>
+        
+        <div className="flex-1">
+          <p>dsds</p>
+        </div>
       </main>
     </div>
   )
