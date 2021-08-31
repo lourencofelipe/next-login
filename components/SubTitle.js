@@ -1,7 +1,7 @@
-const SubTile = ({ children }) => (
-    <h3 className="">
+const SubTitle = ({ children, className }) => (
+    <h3 className={className}>
         { children }
     </h3>
 )
 
-export default SubTile
+export default SubTitle

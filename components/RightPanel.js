@@ -1,7 +1,7 @@
-const RightPanel = ({ children }) => (
-    <div className="bg-purple-600">
+const RightPanel = ({ children, className }) => (
+    <section className={`bg-indigo-700 ${className}`}>
         { children }
-    </div>
+    </section>
 )
 
 export default RightPanel

@@ -1,5 +1,5 @@
-const Title = ({ children }) => (
-    <h1 className="text-5xl sm:text-lg sm:leading-7">
+const Title = ({ children, className }) => (
+    <h1 className={className}>
         { children }
     </h1>
 )
