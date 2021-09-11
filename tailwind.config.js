@@ -20,7 +20,8 @@ module.exports = {
       'light-blue': { '75': '#6B68F2' },
       'small': '#616272',
       'signIn': '#616272',
-      'signInLabel': '#1d4ed8'
+      'signInLabel': '#1d4ed8',
+      'rightPanel': '#FFF'
     },
     fontSize: {
       'xs': '.75rem',
@@ -31,9 +32,9 @@ module.exports = {
       'subTitle': '23px',
       'label': '16px',
       'signIn': '14px',
-      '': '14px',
       'accountButton': '16px',
-      'small':'11px',
+      'small': '11px',
+      'rightPanel':'70px',
       'xl': '16px',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
