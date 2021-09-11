@@ -21,3 +21,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::selection {   background-color: #e3a1bd !important; }

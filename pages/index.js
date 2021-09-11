@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import googleIcon from '../public/google_icon.svg'
+import facebookIcon from '../public/fb_icon.svg'
+import appleIcon from '../public/apple_icon.svg'
 
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import Label from '../components/Label'
+import ImageButton from '../components/ImageButton'
 
 import RightPanel from '../components/RightPanel'
 import LeftPanel from '../components/LeftPanel'
@@ -22,30 +25,58 @@ export default function Home() {
 
       <main className="flex space-x-2">
         <div className="flex-1 h-screen">
-          <LeftPanel className="flex-1 p-20 h-full">
-            <div className="flow-roots text-center h-full p-10">
-              
-              <section className="flex items-start m-8">
-                <Label name="Have an account? Sign in" className="leading-signIn text-signIn"></Label>
+          <LeftPanel className="flex-1 px-32 h-full">
+            <div className="flex flex-col justify-evenly flow-roots text-center h-full px-10">
+
+              <section className="flex items-start">
+                <Label name="Have an account?" className="leading-signIn text-signIn"></Label>
+                <Label className="text-signInLabel" name=" Sign in"></Label>
               </section>
 
-              <Title className="text-mainTitle leading-mainTitle font-bold fonts-spartan">Welcome to SDL</Title>
+              <header>
+                <Title className="text-mainTitle leading-mainTitle font-bold fonts-spartan">Welcome to SDL</Title>
 
-              <SubTitle className="text-subTitle leading-subTitle font-subTitle">Duis aute irure dolor in reprehenderit.
-                Ut enim ad minim veniam.</SubTitle>
+                <SubTitle className="text-subTitle leading-subTitle font-subTitle">Duis aute irure dolor in reprehenderit.
+                  Ut enim ad minim veniam.</SubTitle>
+              </header>
 
               <section className="flex flex-col items-start">
-                <Label name="Email*" className="text-label leading-label font-label py-3"></Label>
+                <Label name="Email" className="text-label leading-label font-normal py-3" required></Label>
                 <Input placeholder="mail@example.com" type="text" className="border-input rounded-input w-full p-5"></Input>
 
-                <Label name="Password*" className="text-label leading-label font-label py-3"></Label>
-                <Input placeholder="Min. 6 character" type="password" className="border-input rounded-input w-full p-5"></Input>
+                <Label name="Password" className="text-label leading-label font-normal py-3" required></Label>
+                <Input placeholder="******" type="password" className="border-input rounded-input w-full p-5"></Input>
+                <small className="text-small">Min. 6 character</small>
               </section>
 
               <section className="flex items-center">
-                <Button onClick={onClick} className="font-bold fonts-roboto text-xl border-buttonAccount w-full p-7 mt-5 bg-accountButton text-white border-buttonAccount rounded-input leading-accountButton">
+                <Button onClick={onClick} className="
+                font-bold
+                fonts-roboto
+                text-xl
+                border-buttonAccount
+                w-full
+                p-4
+                mt-5
+                bg-accountButton
+                text-white
+                border-buttonAccount
+                rounded-input
+                leading-accountButton">
                   Create an account
                 </Button>
+              </section>
+
+              <section className="flex justify-between items-center">
+                <hr className="w-hr" />
+                <Label className="text-label fonts-semibold">Or sign up with</Label>
+                <hr className="w-hr" />
+              </section>
+
+              <section className="flex justify-between">
+                <ImageButton className="border-imageButton rounded-imageButton w-imageButton flex items-center justify-center p-2" src={googleIcon} width={40} height={40}></ImageButton>
+                <ImageButton className="border-imageButton rounded-imageButton w-imageButton flex items-center justify-center p-2" src={facebookIcon} width={40} height={40}></ImageButton>
+                <ImageButton className="border-imageButton rounded-imageButton w-imageButton flex items-center justify-center p-2" src={appleIcon} width={40} height={40}></ImageButton>
               </section>
             </div>
           </LeftPanel>
