@@ -22,4 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-::selection {   background-color: #e3a1bd !important; }
+::selection {
+  background-color: #38BDF8 !important;
+  color: #FFFFFF;
+}

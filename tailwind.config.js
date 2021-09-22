@@ -80,7 +80,7 @@ module.exports = {
       'buttonAccount': '375px',
       'full': '100%',
       'leftPanel': '375px',
-      'hr': '33.3%',
+      'hr': '30.3%',
       'imageButton':'25%'
     },
   },
@@ -89,4 +89,3 @@ module.exports = {
   },
   plugins: [],
 }
-
